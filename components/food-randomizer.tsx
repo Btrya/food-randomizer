@@ -235,7 +235,7 @@ export default function FoodRandomizer() {
               </Button>
             </div>
 
-            <div className="h-60 border rounded-lg p-4 overflow-hidden relative">
+            <div className="h-96 border rounded-lg p-4 overflow-hidden relative">
               {foodItems.length === 0 ? (
                 <div className="flex h-full items-center justify-center text-slate-400">
                   无好食。点击"无我爱个"按钮添加一些！
