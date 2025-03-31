@@ -110,14 +110,15 @@ export default function FoodRandomizer() {
           { id: "a14", name: "老香黄蜜饯" },
           { id: "a15", name: "南糖" },
           { id: "a16", name: "冬瓜册" },
-          { id: "a17", name: "书册糕" },
+          { id: "a17", name: "福气咖啡" },
           { id: "a18", name: "姜薯桃" },
           { id: "a19", name: "潮州工夫茶配朥饼" },
           { id: "a20", name: "柿饼" },
           { id: "a21", name: "油索" },
           { id: "a22", name: "蜜饯橄榄" },
           { id: "a23", name: "咸水梅汁" },
-          { id: "a24", name: "糖葱薄饼" }
+          { id: "a24", name: "糖葱薄饼" },
+          { id: "a25", name: "书册糕" },
         ],
         dinner: [
           // 原有条目
