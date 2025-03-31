@@ -231,7 +231,7 @@ export default function FoodRandomizer() {
               </h2>
               <Button variant="outline" size="sm" onClick={() => setShowAddForm(true)}>
                 <Plus className="h-4 w-4 mr-1" />
-                添加食物
+                无我爱个
               </Button>
             </div>
 
