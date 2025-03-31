@@ -15,6 +15,7 @@ export default function FoodRandomizer() {
     lunch: [],
     afternoonTea: [],
     dinner: [],
+    supper: []
   })
   const [selectedCategory, setSelectedCategory] = useState<FoodCategory>("breakfast")
   const [selectedFood, setSelectedFood] = useState<FoodItem | null>(null)
@@ -149,6 +150,38 @@ export default function FoodRandomizer() {
           { id: "d25", name: "香煎蚝仔烙" },
           { id: "d26", name: "梅膏蒸鳗鱼" },
           { id: "d27", name: "麻叶炒普宁豆酱" }
+        ],
+        supper: [
+          { id: "s1", name: "潮州砂锅粥（虾蟹粥）" },
+          { id: "s2", name: "粿条汤（猪杂/海鲜）" },
+          { id: "s3", name: "鱼饺汤" },
+          { id: "s4", name: "炒糕粿" },
+          { id: "s5", name: "鱼虾生" },
+          { id: "s6", name: "菜脯鱼头粥" },
+          { id: "s7", name: "潮式炒田螺" },
+          { id: "s8", name: "麻叶炒豆酱" },
+          { id: "s9", name: "生腌血蚶" },
+          { id: "s10", name: "蚝仔烙（夜宵版）" },
+          { id: "s11", name: "凤凰炸豆腐" },
+          { id: "s12", name: "咸菜猪杂汤" },
+          { id: "s13", name: "普宁豆干煲" },
+          { id: "s14", name: "潮州牛肉丸粿条" },
+          { id: "s15", name: "金不换炒薄壳（夜宵版）" },
+          { id: "s16", name: "麻油沙茶拌面" },
+          { id: "s17", name: "鱼饭配豆酱" },
+          { id: "s18", name: "猪肠糯米汤" },
+          { id: "s19", name: "潮式烧烤（鳗鱼、豆腐鱼）" },
+          { id: "s20", name: "虾枣汤" },
+          { id: "s21", name: "腌蟹钳" },
+          { id: "s22", name: "鸭母捻甜汤" },
+          { id: "s23", name: "返沙双色（芋头/番薯）" },
+          { id: "s24", name: "潮州鱼皮饺" },
+          { id: "s25", name: "腐乳炒通菜" },
+          { id: "s26", name: "椒盐九肚鱼" },
+          { id: "s27", name: "姜薯甜蛋汤" },
+          { id: "s28", name: "潮式甘草水果" },
+          { id: "s29", name: "老药桔炖汤" },
+          { id: "s30", name: "沙茶粿条" }
         ]
       }
       setFoods(defaultFoods)
@@ -213,11 +246,12 @@ export default function FoodRandomizer() {
         }}
         className="w-full"
       >
-        <TabsList className="grid grid-cols-4 mb-6">
+        <TabsList className="grid grid-cols-5 mb-6">
           <TabsTrigger value="breakfast">早餐</TabsTrigger>
           <TabsTrigger value="lunch">中餐</TabsTrigger>
           <TabsTrigger value="afternoonTea">下午茶</TabsTrigger>
           <TabsTrigger value="dinner">晚餐</TabsTrigger>
+          <TabsTrigger value="supper">夜宵</TabsTrigger>
         </TabsList>
 
         {Object.entries(foods).map(([category, foodItems]) => (
@@ -228,6 +262,7 @@ export default function FoodRandomizer() {
                 {category === "lunch" && "中餐"}
                 {category === "afternoonTea" && "下午茶"}
                 {category === "dinner" && "晚餐"}
+                {category === "supper" && "夜宵"}
               </h2>
               <Button variant="outline" size="sm" onClick={() => setShowAddForm(true)}>
                 <Plus className="h-4 w-4 mr-1" />

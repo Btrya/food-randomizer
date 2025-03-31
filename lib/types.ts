@@ -1,4 +1,4 @@
-export type FoodCategory = "breakfast" | "lunch" | "afternoonTea" | "dinner"
+export type FoodCategory = "breakfast" | "lunch" | "afternoonTea" | "dinner" | "supper"
 
 export interface FoodItem {
   id: string

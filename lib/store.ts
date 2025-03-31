@@ -1,6 +1,6 @@
 import type { FoodItem, FoodCategory } from "./types"
 
-const STORAGE_KEY = "food-randomizer-data-0331.1"
+const STORAGE_KEY = "food-randomizer-data-0331.2"
 
 export function saveFoods(foods: Record<FoodCategory, FoodItem[]>): void {
   if (typeof window !== "undefined") {

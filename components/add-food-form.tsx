@@ -64,6 +64,10 @@ export default function AddFoodForm({ onAdd, onCancel, currentCategory }: AddFoo
             <RadioGroupItem value="dinner" id="dinner" />
             <Label htmlFor="dinner">晚餐</Label>
           </div>
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="supper" id="supper" />
+            <Label htmlFor="supper">夜宵</Label>
+          </div>
         </RadioGroup>
       </div>
 
