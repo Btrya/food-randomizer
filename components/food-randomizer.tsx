@@ -238,7 +238,7 @@ export default function FoodRandomizer() {
             <div className="h-60 border rounded-lg p-4 overflow-hidden relative">
               {foodItems.length === 0 ? (
                 <div className="flex h-full items-center justify-center text-slate-400">
-                  没有食物项目。点击"添加食物"按钮添加一些！
+                  无好食。点击"无我爱个"按钮添加一些！
                 </div>
               ) : (
                 <div className="space-y-2 overflow-y-auto h-full">
@@ -294,7 +294,7 @@ export default function FoodRandomizer() {
 
             <Button onClick={handleRoll} disabled={isRolling || foodItems.length === 0} className="w-full">
               <Dices className="mr-2 h-4 w-4" />
-              Roll
+              {selectedFood ? "我迈！！重Roll" : "Roll！！"}
             </Button>
           </TabsContent>
         ))}

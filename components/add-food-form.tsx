@@ -28,7 +28,7 @@ export default function AddFoodForm({ onAdd, onCancel, currentCategory }: AddFoo
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <h2 className="text-xl font-semibold mb-4">添加新食物</h2>
+      <h2 className="text-xl font-semibold mb-4">无我爱个</h2>
 
       <div className="space-y-2">
         <Label htmlFor="food-name">食物名称</Label>
